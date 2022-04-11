@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container bg-dark mt-5 p-5">
+        <h1 class="text-warning">Dojo Survey</h1>
+        <form action="/process" method="post">
+            <div class="row mt-4">
+                <label class="text-light form-label" for="name">Your Name:</label>
+                <input class="form-control" type="text" name="name">
+            </div>
+            <div class="row mt-4">
+                <label class="text-light" for="city">Dojo Location:</label>
+                <select class="form-select mt-2" name="city" id="city">
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Online">Online</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Bellevue">Bellevue</option>
+                </select>
+            </div>
+            <div class="row mt-4">
+                <label class="text-light" for="language">Favorite language:</label>
+                <select class="form-select mt-2" name="language" id="language">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <div class="row mt-4">
+                <label class="text-light form-label" for="comment">Comment (optional):</label>
+                <textarea class="form-control" name="comment" rows="3"></textarea>
+            </div>
+            <input class="btn btn-warning mt-5" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
